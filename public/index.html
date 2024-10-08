@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dijital Spor Web Sitesi</title>
+    <link href="output.css" rel="stylesheet">
+    <title>Geri Sayım Sayacı</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Üst Reklam Bölmesi -->
+
+    <div class= "w-full h-28 flex items-center justify-between">
+        <!-- Sol Taraf: Resim -->
+        <div class=" ">
+            <img src="C:\Users\user\Desktop\project-directory\images\reklamresmi.png" alt="Reklam Resmi" class="h-full w-full object-cover">
+        </div>
+        <!-- Sağ Taraf: Geri Sayım Sayacı -->
+        <div class="flex items-center justify-end pr-4">
+            
+         <!-- Geri Sayım Bölümü -->
+         <div class="text-center my-8">
+            <h1 class="text-xl font-bold mb-4">Maç Başlangıcına Kalan Süre</h1>
+            <div id="countdown" class="text-xl font-bold">
+                <span id="days"></span> Gün 
+                <span id="hours"></span> Saat 
+                <span id="minutes"></span> Dakika 
+                <span id="seconds"></span> Saniye
+            </div>
+         </div>
+         
+        </div>
+    </div>
+
+
+
+    <!-- Logo ve Menü -->
+    <div class="flex justify-between items-center p-4 bg-white shadow-md">
+        <div class="text-2xl font-bold">
+         <img src="C:\Users\user\Desktop\project-directory\images\logo.png" alt="" class="w-auto">
+
+        </div>
+        <nav class="flex space-x-4">
+            <a href="#" class="text-gray-600">Anasayfa</a>
+            <a href="#" class="text-gray-600">Hakkımızda</a>
+            <a href="#" class="text-gray-600">İletişim</a>
+        </nav>
+    </div>
+
+    <!-- Banner ve Form -->
+    <div class="flex flex-col md:flex-row justify-between items-center p-4">
+        <div class="w-full md:w-2/3 h-82  flex items-center justify-center ">
+            <img src="C:\Users\user\Desktop\project-directory\images\banner.png" alt="" class="w-auto h-82 ">
+           
+        </div>
+        <div class="w-full md:w-1/3 bg-white p-4 shadow-md mt-4 md:mt-0  ">
+            <h2 class="text-xl font-bold mb-4">Bize Ulaşın</h2>
+            <form id="contactForm">
+                <label for="firstName" class="block mb-2">Ad</label>
+                <input type="text" id="firstName" name="firstName" class="w-full p-2 border mb-4" required>
+                <label for="lastName" class="block mb-2">Soyad</label>
+                <input type="text" id="lastName" name="lastName" class="w-full p-2 border mb-4" required>
+                <label for="phoneNumber" class="block mb-2">Numara</label>
+                <input type="text" id="phoneNumber" name="phoneNumber" class="w-full p-2 border mb-4" required>
+                <button type="submit" class="w-full bg-blue-500 text-white p-2">Gönder</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Başlık ve Dört Kutu -->
+    <div class="p-4">
+        <h2 class="text-2xl font-bold mb-4"> Neler Var? </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div class="bg-white p-4 shadow-md">
+
+<!-- kutu1-->
+            
+
+<div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+    <a href="#">
+        <img class="rounded-t-lg" src="C:\Users\user\Desktop\project-directory\images\kus.png" alt="" />
+    </a>
+    <div class="p-5">
+        <a href="#">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Belgesel</h5>
+        </a>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Birbirinden popüler ve kaliteli belgesel kanallarında vahşi
+            yaşam, doğa belgeselleri, popüler bilim ve teknoloji serileri ile tarih belgeselleri</p>
+        
+          </div>
+           </div>
+
+         </div>
+
+            <!-- kutu2-->
+
+            <div class="bg-white p-4 shadow-md">  
+
+                <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                    <a href="#">
+                        <img class="rounded-t-lg" src="C:\Users\user\Desktop\project-directory\images\music.png" alt="" />
+                    </a>
+                    <div class="p-5">
+                        <a href="#">
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Müzik ve Yaşam</h5>
+                        </a>
+                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Dünya mutfağının farklı tatlarına uzanan geniş bir içerikle belN Gurme, yermek ve eğlence temalı beIN H&E ve daha birçok kanal.</p>
+                        
+                    </div>
+                   </div>             
+
+            </div>
+
+
+            <!-- kutu3-->
+            <div class="bg-white p-4 shadow-md">
+
+                <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                    <a href="#">
+                        <img class="rounded-t-lg" src="C:\Users\user\Desktop\project-directory\images\futbol.png" alt="" />
+                    </a>
+                    <div class="p-5">
+                        <a href="#">
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Spor</h5>
+                        </a>
+                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Futbol, basketbol ve tenis karşılaşmalarının olduğu spor heyecanını yaşatan yerli ve yabancı spor kanalları.</p>
+                        
+                    </div>
+                   </div>   
+
+
+
+            </div>
+
+
+            <!--kutu 4-->
+            <div class="bg-white p-4 shadow-md">
+
+                <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                    <a href="#">
+                        <img class="rounded-t-lg" src="C:\Users\user\Desktop\project-directory\images\dizi.png" alt="" />
+                    </a>
+                    <div class="p-5">
+                        <a href="#">
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Dizi ve Film</h5>
+                        </a>
+                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Tüm zamanların ünlüleri, bol ödüllü, bol yıldızlı klasik filmler ve ödüllü komedi dizileri ile sitcomlar ve daha bir çok içerik sizleri bekliyor.</p>
+                        
+                    </div>
+                   </div>   
+
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Kampanyalarımız -->
+    <div class="p-4">
+        <h2 class="text-2xl font-bold mb-4">Kampanyalarımız</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+
+            <div class="bg-white p-4 shadow-md">
+
+                <h2 class="text-2xl font-bold mb-4">Popüler Kampanyalar</h2>
+                
+                <!-- Kampanyalar 1 -->
+                <ul>
+                    <li class="mb-2">
+                        <a href="#" class="text-blue-500 hover:text-blue-700">Formula 1 Paketi</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="#" class="text-blue-500 hover:text-blue-700">Digiturk Eğlencenin ve Avrupanın Yıldızı</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="#" class="text-blue-500 hover:text-blue-700">Digiturk İllere Özel Süper Lig Faturalı</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="#" class="text-blue-500 hover:text-blue-700">Digiturk Sporun Yıldızı</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="#" class="text-blue-500 hover:text-blue-700">Digiturk Taraftar Paketi</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="#" class="text-blue-500 hover:text-blue-700">Hemen Başvur</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="#" class="text-blue-500 hover:text-blue-700">Tüm Kampanyalar</a>
+                    </li>
+                </ul>
+
+
+            </div>
+
+
+            <!-- Kampanyalar 2 -->
+            <div class="bg-white p-4 shadow-md">
+                <h2 class="text-2xl font-bold mb-4">Uydu Alıcılı Kampanyalar</h2>
+                <ul>
+                    <li class="mb-2">
+                        <a href="#" class="text-blue-500 hover:text-blue-700">Digiturk Eğlencenin ve Avrupanın Yıldızı</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="#" class="text-blue-500 hover:text-blue-700">Digiturk İllere Özel Süper Lig Faturalı</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="#" class="text-blue-500 hover:text-blue-700">Digiturk Taraftar Paketi</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="#" class="text-blue-500 hover:text-blue-700">Digiturk Sporun Yıldızı</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="#" class="text-blue-500 hover:text-blue-700">Formula 1 Paketi</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="#" class="text-blue-500 hover:text-blue-700">Digiturk Yıldız Dolu</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="#" class="text-blue-500 hover:text-blue-700">Tüm Kampanyalar</a>
+                    </li>
+                </ul>
+
+
+            </div>
+
+       <!-- Kampanyalar 3 -->
+            <div class="bg-white p-4 shadow-md">
+                <h2 class="text-2xl font-bold mb-4">Uydu Alıcısız Kampanyalar</h2>
+         <ul>
+            <li class="mb-2">
+                <a href="#" class="text-blue-500 hover:text-blue-700">Digiturk Taraftar Paketi (Kutusuz)</a>
+            </li>
+            <li class="mb-2">
+                <a href="#" class="text-blue-500 hover:text-blue-700">Digiturk Sporun Yıldızı (Kutusuz)</a>
+            </li>
+            <li class="mb-2">
+                <a href="#" class="text-blue-500 hover:text-blue-700">Tüm Kampanyalar</a>
+            </li>
+        </ul>
+            </div>
+        </div>
+    </div>
+
+     <!-- Footer Başlangıcı -->
+    
+       
+       <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8">
+                <!-- Başlık 1 -->
+                <div>
+                    <h4 class="text-xl font-bold mb-12">Tod TV Paketleri</h4>
+                    <ul>
+                        <li><a href="#" class="text-white  hover:text-gray-400">Sporun Yıldızı Paketi Kredi Kartlı</a></li>
+                        <li><a href="#" class="text-white  hover:text-gray-400">Digiturk Sporun Yıldızı (Kutusuz)</a></li>
+                        <li><a href="#" class="text-white  hover:text-gray-400">Digiturk Taraftar Paketi (Kutusuz)</a></li>
+                    
+                    </ul>
+                </div>
+                <!-- Başlık 2 -->
+                <div>
+                    <h4 class="text-xl font-bold mb-4" >Bein Connect Paketleri</h4>
+                    <ul>
+                        <li><a href="#" class="text-white  hover:text-gray-400">Sporun Yıldızı Paketi Kredi Kartlı</a></li>
+                        <li><a href="#" class="text-white  hover:text-gray-400">Digiturk Sporun Yıldızı (Kutusuz)</a></li>
+                        <li><a href="#" class="text-white  hover:text-gray-400">Digiturk Taraftar Paketi (Kutusuz)</a></li>
+                     
+                    </ul>
+                </div>
+                <!-- Başlık 3 -->
+                <div>
+                    <h4 class="text-xl font-bold mb-4">İnternet + TV Kampanyaları</h4>
+                    <ul>
+                        <li><a href="#" class="text-white  hover:text-gray-400">Digitürk İnternetli Sporun Yıldızı (Kutusuz)</a></li>
+                        <li><a href="#" class="text-white  hover:text-gray-400">Digiturk İnternetli Sporun Yıldızı</a></li>
+                        <li><a href="#" class="text-white  hover:text-gray-400">Digitürk İnternetli Eğlencenin ve Avrupanın Yıldızı (Kutusuz)</a></li>
+                        <li><a href="#" class="text-white  hover:text-gray-400">Digiturk İnternetli Eğlencenin Ve Avrupanın Yıldızı</a></li>
+                    </ul>
+                </div>
+                <!-- Başlık 4 -->
+                <div>
+                    <h4 class="text-xl font-bold mb-4 ">Spor / İnternetli Spor Paketleri</h4>
+                    <ul>
+                        <li><a href="#" class="text-white  hover:text-gray-400">Digiturk Eğlencenin ve Avrupanın Yıldızı</a></li>
+                        <li><a href="#" class="text-white  hover:text-gray-400">Digiturk Taraftar Paketi</a></li>
+                        <li><a href="#" class="text-white  hover:text-gray-400">Digiturk İllere Özel Süper Lig Faturalı</a></li>
+                        <li><a href="#" class="text-white  hover:text-gray-400">Digiturk Sporun Yıldızı</a></li>
+                        <li><a href="#" class="text-white  hover:text-gray-400">Digiturk İnternetli Taraftar Paketi</a></li>
+                        <li><a href="#" class="text-white  hover:text-gray-400">Digiturk İnternetli Sporun Yıldızı</a></li>
+                    </ul>
+                </div>
+                <!-- Başlık 5 -->
+                <div>
+                    <h4 class="text-xl font-bold mb-12">Kurumsal</h4>
+                    <ul>
+                        <li><a href="#" class="text-white  hover:text-gray-400">Kişisel Verilerin Korunması</a></li>
+                        <li><a href="#" class="text-white  hover:text-gray-400">Bayilik Başvurusu</a></li>
+                        <li><a href="#" class="text-white  hover:text-gray-400">Çerez Politikası</a></li>
+                        <li><a href="#" class="text-white  hover:text-gray-400">İletişim</a></li>
+                        <li><a href="#" class="text-white  hover:text-gray-400">Digiturk Sıkça Sorulan Sorular</a></li>
+                    </ul>
+                </div>
+
+                <!-- Başlık 6 -->
+                <div>
+                    <h4 class="text-xl font-bold mb-12">Diğer</h4>
+                    <ul>
+                        <li><a href="#" class="text-white  hover:text-gray-400">Tüm Kampanyalar</a></li>
+                        <li><a href="#" class="text-white  hover:text-gray-400">Hemen Başvur</a></li>
+                        <li><a href="#" class="text-white  hover:text-gray-400">Canlı Yayın</a></li>
+                        <li><a href="#" class="text-white  hover:text-gray-400">Kanal Listesi</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Footer -->
+    <footer class="w-full bg-gray-500 text-black p-4 text-center">
+        © 2024 Dijital Spor Web Sitesi
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
